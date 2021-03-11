@@ -53,8 +53,8 @@ function preload(){
 }
 
 function setup() {    
-    width = displayWidth * pixelDensity();
-    height = displayHeight * pixelDensity();
+    width = displayWidth * pixelDensity() - 18;
+    height = displayHeight * pixelDensity() - 18;
     xoffset = width/2-180;
     createCanvas(width,height);
     background(backgroundColor);
