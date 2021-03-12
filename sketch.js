@@ -166,34 +166,34 @@ function collapse(l){
 }
 
 function keyDown(){ 
-    if(keyIsDown(76) && (timer % (4)) === 0){
+    if(keyIsDown(40) && (timer % (4)) === 0){
             current.lower();
     }
-    if(keyIsDown(75) && (timer % (3)) === 0 && lwindup > maxwindup){
+    if(keyIsDown(37) && (timer % (3)) === 0 && lwindup > maxwindup){
             current.move(-1);
     }
-    if(keyIsDown(186) && (timer % (3)) === 0 && rwindup > maxwindup){
+    if(keyIsDown(39) && (timer % (3)) === 0 && rwindup > maxwindup){
             current.move(1);
     }
-    if(keyIsDown(75)){
+    if(keyIsDown(37)){
         lwindup += 3;
     }
-    if(keyIsDown(186)){
+    if(keyIsDown(39)){
         rwindup += 3;
     }
 }
 
 function keyPressed(){
     if(n === 0){
-        if(keyCode === 79){//o
+        if(keyCode === 38){//o
             current.rotate(1);
             graphics();
-        }else if(keyCode === 222){//''
+        }else if(keyCode === 67){//''
             current.rotate(-1);
             graphics();
-        }else if(keyCode === 75){//k
+        }else if(keyCode === 37){//k
             current.move(-1);    
-        }else if(keyCode === 186){//;
+        }else if(keyCode === 39){//;
             current.move(1);
         }else if(keyCode === 32){//space
             current.drop();    
