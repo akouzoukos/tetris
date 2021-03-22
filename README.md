@@ -1,4 +1,4 @@
-https://akouzoukos.github.io/tetris/
+Play at: https://akouzoukos.github.io/tetris/
 
     Controls:
     Move Left & Right: Left & Right Arrows 
